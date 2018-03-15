@@ -14,9 +14,9 @@ if($promo5['rows'] != 4){ ?>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">                            
-              <div class="banner_image_1920"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
-              <div class="banner_image_960"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
-              <div class="banner_image_320"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
+              <div class="banner_image_1920 slideimg-desktop"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
+              <div class="banner_image_960 slideimg-tab"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
+              <div class="banner_image_320 slideimg-mobile"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
               <div class="carousel-caption">
                 <h3 class="home_h1">LIFE FITNESS</h3>
                 <h4 class="home_h2">95T INSPIRE TREAMILLS</h4>
@@ -26,9 +26,9 @@ if($promo5['rows'] != 4){ ?>
               </div>
             </div>
             <div class="swiper-slide">                            
-              <div class="banner_image_1920"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>  
-              <div class="banner_image_960"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
-              <div class="banner_image_320"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
+              <div class="banner_image_1920 slideimg-desktop"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>  
+              <div class="banner_image_960 slideimg-tab"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
+              <div class="banner_image_320 slideimg-mobile"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg" alt="banner"></div>
               <div class="carousel-caption">
                 <h3 class="home_h1">LIFE FITNESS</h3>
                 <h4 class="home_h2">95T INSPIRE TREAMILLS</h4>
@@ -38,9 +38,9 @@ if($promo5['rows'] != 4){ ?>
               </div>
             </div>
             <div class="swiper-slide">                            
-              <div class="banner_image_1920"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg"  alt="banner"></div>
-              <div class="banner_image_960"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg"   alt="banner"></div>
-              <div class="banner_image_320"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg"   alt="banner"></div>
+              <div class="banner_image_1920 slideimg-desktop"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg"  alt="banner"></div>
+              <div class="banner_image_960 slideimg-tab"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg"   alt="banner"></div>
+              <div class="banner_image_320 slideimg-mobile"><img src="<?php echo base_url(); ?>/public/assets/images/banner_img.jpg"   alt="banner"></div>
               <div class="carousel-caption">
                 <h3 class="home_h1">LIFE FITNESS</h3>
                 <h4 class="home_h2">95T INSPIRE TREAMILLS</h4>
@@ -72,7 +72,7 @@ if($promo5['rows'] != 4){ ?>
                 print_r($CarouselData[0]->CarouselHyperlink);
               }else{                                    
                 print_r(base_url().$CarouselData[0]->CarouselHyperlink);}?>">
-                <div class="banner_image_1920">
+                <div class="banner_image_1920 slideimg-desktop">
                   <img title="<?php echo $CarouselData[0]->CarouselImageTitleAtribute;?>" alt = "<?php echo $CarouselData[0]->CarouselImageTitleAtribute;?>" src="<?php print_r(base_url().$CarouselData[0]->LargeDesktopCarouselImage);?>">
                 </div>
               </a>
@@ -83,7 +83,7 @@ if($promo5['rows'] != 4){ ?>
               if (strpos($CarouselData[0]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[0]->CarouselHyperlink, 'strength') == false ) {
                 print_r($CarouselData[0]->CarouselHyperlink);
               }else{                                    
-                print_r(base_url().$CarouselData[0]->CarouselHyperlink);}?>"><div class="banner_image_960"><img title="<?php echo $CarouselData[0]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[0]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[0]->CarouselImageAltAtribute;?>" ></div></a>
+                print_r(base_url().$CarouselData[0]->CarouselHyperlink);}?>"><div class="banner_image_960 slideimg-tab"><img title="<?php echo $CarouselData[0]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[0]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[0]->CarouselImageAltAtribute;?>" ></div></a>
                 <!-- Image section End -->
 
                 <!-- Section to display carousel image on mobile-->
@@ -91,25 +91,25 @@ if($promo5['rows'] != 4){ ?>
                 if (strpos($CarouselData[0]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[0]->CarouselHyperlink, 'strength') == false ) {
                   print_r($CarouselData[0]->CarouselHyperlink);
                 }else{                                    
-                  print_r(base_url().$CarouselData[0]->CarouselHyperlink);}?>"> <div class="banner_image_320"><img title="<?php echo $CarouselData[0]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[0]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[0]->CarouselImageAltAtribute;?>"></div></a>
+                  print_r(base_url().$CarouselData[0]->CarouselHyperlink);}?>"> <div class="banner_image_320 slideimg-mobile"><img title="<?php echo $CarouselData[0]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[0]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[0]->CarouselImageAltAtribute;?>"></div></a>
                   <!-- Image section End -->
 
                   <!-- Carousel title & sub title Section -->
                   <div class="carousel-caption">
                     <h3 class="home_h1">
-                      <a title="<?php echo $CarouselHeading[0]->CarouselTitleAltAttribute ?>" href="<?php 
-                        if (strpos($CarouselHeading[0]->CarouselHyperlink, 'cardio') == false || strpos($CarouselHeading[0]->CarouselHyperlink, 'strength') == false ) {
-                          print_r($CarouselHeading[0]->CarouselHyperlink);
+                      <a title="<?php echo $CarouselData[0]->CarouselTitleAltAttribute ?>" href="<?php 
+                        if (strpos($CarouselData[0]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[0]->CarouselHyperlink, 'strength') == false ) {
+                          print_r($CarouselData[0]->CarouselHyperlink);
                         }else{
-                          print_r(base_url().$CarouselHeading[0]->CarouselHyperlink);}?>"><?php echo $CarouselHeading[0]->CarouselTitle;?></a>
+                          print_r(base_url().$CarouselData[0]->CarouselHyperlink);}?>"><?php echo $CarouselData[0]->CarouselTitle;?></a>
                         </h3>
                         <h4 class="home_h2">
                           <a href="<?php 
-                          if (strpos($CarouselHeading[0]->CarouselHyperlink, 'cardio') == false || strpos($CarouselHeading[0]->CarouselHyperlink, 'strength') == false ) {
-                            print_r($CarouselHeading[0]->CarouselHyperlink);
+                          if (strpos($CarouselData[0]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[0]->CarouselHyperlink, 'strength') == false ) {
+                            print_r($CarouselData[0]->CarouselHyperlink);
                           }else{
 
-                            print_r(base_url().$CarouselHeading[0]->CarouselHyperlink);}?>"><?php echo $CarouselHeading[0]->CarouselSubTitle;?></a>
+                            print_r(base_url().$CarouselData[0]->CarouselHyperlink);}?>"><?php echo $CarouselData[0]->CarouselSubTitle;?></a>
                           </h4>
                         </div>
                         <!-- Section End -->
@@ -124,7 +124,7 @@ if($promo5['rows'] != 4){ ?>
                 print_r($CarouselData[1]->CarouselHyperlink);
               }else{                                    
                 print_r(base_url().$CarouselData[1]->CarouselHyperlink);}?>">
-                <div class="banner_image_1921">
+                <div class="banner_image_1921 slideimg-desktop">
                   <img title="<?php echo $CarouselData[1]->CarouselImageTitleAtribute;?>" alt = "<?php echo $CarouselData[1]->CarouselImageTitleAtribute;?>" src="<?php print_r(base_url().$CarouselData[1]->LargeDesktopCarouselImage);?>">
                 </div>
               </a>
@@ -135,7 +135,7 @@ if($promo5['rows'] != 4){ ?>
               if (strpos($CarouselData[1]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[1]->CarouselHyperlink, 'strength') == false ) {
                 print_r($CarouselData[1]->CarouselHyperlink);
               }else{                                    
-                print_r(base_url().$CarouselData[1]->CarouselHyperlink);}?>"><div class="banner_image_961"><img title="<?php echo $CarouselData[1]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[1]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[1]->CarouselImageAltAtribute;?>" ></div></a>
+                print_r(base_url().$CarouselData[1]->CarouselHyperlink);}?>"><div class="banner_image_961 slideimg-tab"><img title="<?php echo $CarouselData[1]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[1]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[1]->CarouselImageAltAtribute;?>" ></div></a>
                 <!-- Image section End -->
 
                 <!-- Section to display carousel image on mobile-->
@@ -143,7 +143,7 @@ if($promo5['rows'] != 4){ ?>
                 if (strpos($CarouselData[1]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[1]->CarouselHyperlink, 'strength') == false ) {
                   print_r($CarouselData[1]->CarouselHyperlink);
                 }else{                                    
-                  print_r(base_url().$CarouselData[1]->CarouselHyperlink);}?>"> <div class="banner_image_321"><img title="<?php echo $CarouselData[1]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[1]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[1]->CarouselImageAltAtribute;?>"></div></a>
+                  print_r(base_url().$CarouselData[1]->CarouselHyperlink);}?>"> <div class="banner_image_321 slideimg-mobile"><img title="<?php echo $CarouselData[1]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[1]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[1]->CarouselImageAltAtribute;?>"></div></a>
                   <!-- Image section End -->
 
                   <!-- Carousel title & sub title Section -->
@@ -177,7 +177,7 @@ if($promo5['rows'] != 4){ ?>
                 print_r($CarouselData[2]->CarouselHyperlink);
               }else{                                    
                 print_r(base_url().$CarouselData[2]->CarouselHyperlink);}?>">
-                <div class="banner_image_2922">
+                <div class="banner_image_2922 slideimg-desktop">
                   <img title="<?php echo $CarouselData[2]->CarouselImageTitleAtribute;?>" alt = "<?php echo $CarouselData[2]->CarouselImageTitleAtribute;?>" src="<?php print_r(base_url().$CarouselData[2]->LargeDesktopCarouselImage);?>">
                 </div>
               </a>
@@ -188,7 +188,7 @@ if($promo5['rows'] != 4){ ?>
               if (strpos($CarouselData[2]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[2]->CarouselHyperlink, 'strength') == false ) {
                 print_r($CarouselData[2]->CarouselHyperlink);
               }else{                                    
-                print_r(base_url().$CarouselData[2]->CarouselHyperlink);}?>"><div class="banner_image_962"><img title="<?php echo $CarouselData[2]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[2]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[2]->CarouselImageAltAtribute;?>" ></div></a>
+                print_r(base_url().$CarouselData[2]->CarouselHyperlink);}?>"><div class="banner_image_962 slideimg-tab"><img title="<?php echo $CarouselData[2]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[2]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[2]->CarouselImageAltAtribute;?>" ></div></a>
                 <!-- Image section End -->
 
                 <!-- Section to display carousel image on mobile-->
@@ -196,7 +196,7 @@ if($promo5['rows'] != 4){ ?>
                 if (strpos($CarouselData[2]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[2]->CarouselHyperlink, 'strength') == false ) {
                   print_r($CarouselData[2]->CarouselHyperlink);
                 }else{                                    
-                  print_r(base_url().$CarouselData[2]->CarouselHyperlink);}?>"> <div class="banner_image_322"><img title="<?php echo $CarouselData[2]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[2]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[2]->CarouselImageAltAtribute;?>"></div></a>
+                  print_r(base_url().$CarouselData[2]->CarouselHyperlink);}?>"> <div class="banner_image_322 slideimg-mobile"><img title="<?php echo $CarouselData[2]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[2]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[2]->CarouselImageAltAtribute;?>"></div></a>
                   <!-- Image section End -->
 
                   <!-- Carousel title & sub title Section -->
@@ -229,7 +229,7 @@ if($promo5['rows'] != 4){ ?>
                 print_r($CarouselData[3]->CarouselHyperlink);
               }else{                                    
                 print_r(base_url().$CarouselData[3]->CarouselHyperlink);}?>">
-                <div class="banner_image_3933">
+                <div class="banner_image_3933 slideimg-desktop">
                   <img title="<?php echo $CarouselData[3]->CarouselImageTitleAtribute;?>" alt = "<?php echo $CarouselData[3]->CarouselImageTitleAtribute;?>" src="<?php print_r(base_url().$CarouselData[3]->LargeDesktopCarouselImage);?>">
                 </div>
               </a>
@@ -240,7 +240,7 @@ if($promo5['rows'] != 4){ ?>
               if (strpos($CarouselData[3]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[3]->CarouselHyperlink, 'strength') == false ) {
                 print_r($CarouselData[3]->CarouselHyperlink);
               }else{                                    
-                print_r(base_url().$CarouselData[3]->CarouselHyperlink);}?>"><div class="banner_image_963"><img title="<?php echo $CarouselData[3]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[3]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[3]->CarouselImageAltAtribute;?>" ></div></a>
+                print_r(base_url().$CarouselData[3]->CarouselHyperlink);}?>"><div class="banner_image_963 slideimg-tab"><img title="<?php echo $CarouselData[3]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[3]->TabletDesktopCarouselImage); ?>" alt = "<?php echo $CarouselData[3]->CarouselImageAltAtribute;?>" ></div></a>
                 <!-- Image section End -->
 
                 <!-- Section to display carousel image on mobile-->
@@ -248,7 +248,7 @@ if($promo5['rows'] != 4){ ?>
                 if (strpos($CarouselData[3]->CarouselHyperlink, 'cardio') == false || strpos($CarouselData[3]->CarouselHyperlink, 'strength') == false ) {
                   print_r($CarouselData[3]->CarouselHyperlink);
                 }else{                                    
-                  print_r(base_url().$CarouselData[3]->CarouselHyperlink);}?>"> <div class="banner_image_333"><img title="<?php echo $CarouselData[3]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[3]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[3]->CarouselImageAltAtribute;?>"></div></a>
+                  print_r(base_url().$CarouselData[3]->CarouselHyperlink);}?>"> <div class="banner_image_333 slideimg-mobile"><img title="<?php echo $CarouselData[3]->CarouselImageTitleAtribute;?>" src="<?php  print_r(base_url().$CarouselData[3]->MobileCarouselImage); ?>" alt = "<?php echo $CarouselData[3]->CarouselImageAltAtribute;?>"></div></a>
                   <!-- Image section End -->
 
                   <!-- Carousel title & sub title Section -->
@@ -307,12 +307,12 @@ if($promo5['rows'] != 4){ ?>
          <section><!-- <div class="container-fluid"> -->
           <div class="container-fluid">
             <div class="row home_pahe_availall_PEnal">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="home_pahe__afterBANNER1">
                   <div class="HOMEBNR_aftrCONTENT">
                   </div>
                 </div>
-              </div> 
+              </div>  -->
               <?php if(empty($promo4[0]->VideoSmall)){ ?>
               <div class="col-xs-12 col-sm-6 padd_none_hom">
                 <div class="home_pahe__afterBANNER_1920 newvar-banner">

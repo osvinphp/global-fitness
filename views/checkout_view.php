@@ -1398,6 +1398,7 @@ $(document).ready(function() {
                 dataType: 'json',
                 success:function(result){
                       $data = result;
+                      // console.log();
                       var inc = <?php echo $inc; ?>;
                   for(var j = 1; j <= inc; j++){
                         $('#shipTaxCharges'+j).text(result[j-1]);

@@ -14,7 +14,7 @@ var google_conversion_currency = "USD";
 var google_remarketing_only = false;
 /* ]]> */
 </script>
-
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
 <style type="text/css">
 .checkout_tittle {float: left; width: 100%; margin-top: 10px; margin-bottom: 10px; }
 .checkout_tittle h3 {margin: 0; }
@@ -434,12 +434,14 @@ h5.PRODUCT_FONT {font-size: 13px; line-height: 20px; }
                 <div class="col-md-7 col-sm-7 col-xs-8">
                     <h5 class="PRODUCT_FONT H_TAG_NO_MGN"><a class="ANCHER_BLCK" href=""><?php if($live->Kingdom=="Cardio"){ ?>
                             <a href="<?php echo base_url('fitness-equipment').'/'.$link; ?>"><?php echo $live->Name; ?></a>
+                             <p style="font-family: 'PT Sans', sans-serif;color: #555555;font-size: 10px;"><?php echo $live->ShippingClass; ?></p>
                             <?php
                           }
                           else
                           {
                             ?>
                             <a href="<?php echo base_url('gym-equipment').'/'.$link; ?>"><?php echo $live->Name; ?></a>
+                             <p style="font-family: 'PT Sans', sans-serif;color: #555555;font-size: 10px;"><?php echo $live->ShippingClass; ?></p>
                             <?php
                           }
                         ?></a></h5>
@@ -492,12 +494,14 @@ h5.PRODUCT_FONT {font-size: 13px; line-height: 20px; }
                 <div class="col-md-7 col-sm-7 col-xs-8">
                     <h5 class="PRODUCT_FONT H_TAG_NO_MGN"><a class="ANCHER_BLCK" href=""><?php if($live->Kingdom=="Cardio"){ ?>
                             <a href="<?php echo base_url('fitness-equipment').'/'.$link; ?>"><?php echo $live->ProductName; ?></a>
+                             <p style="font-family: 'PT Sans', sans-serif;color: #555555;font-size: 10px;"><?php echo $live->ShippingClass; ?></p>
                             <?php
                           }
                           else
                           {
                             ?>
                             <a href="<?php echo base_url('gym-equipment').'/'.$link; ?>"><?php echo $live->ProductName; ?></a>
+                             <p style="font-family: 'PT Sans', sans-serif;color: #555555;font-size: 10px;"><?php echo $live->ShippingClass; ?></p>
                             <?php
                           }
                         ?></a></h5>

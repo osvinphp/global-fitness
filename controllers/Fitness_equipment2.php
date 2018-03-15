@@ -25,8 +25,9 @@ class Fitness_equipment2 extends CI_Controller
     $data['VideoData'] = $this->Site_model->SelectData('zHomePageVideoData');
     $data['PromotionalData'] = $this->Site_model->PromotionalData();
     $data['CarouselData'] = $this->Site_model->CarouselData();
+    $data['NewHomeMetaData'] = $this->Site_model->SelectData('zHomePageMetaData');
 
-    // echo "<pre>"; print_r($data['CarouselData']); die;
+    // echo "<pre>"; print_r($data['NewHomeMetaData']); die;
 
     $data['product'] = $this->Site_model->productSearch("Cardio");
     $data['model_obj'] = $this->Site_model;
@@ -38,11 +39,16 @@ class Fitness_equipment2 extends CI_Controller
     $mydata['promo3'] = $this->Site_model->PromoData2();
     $mydata['promo4'] = $this->Site_model->PromoData3();
     $mydata['promo5'] = $this->Site_model->PromoData4();
-    $data['Author']  ='Global Fitness, Inc., support@globalfitness.us.com';
-    $data['description'] = 'Browse the largest inventory of used fitness equipment and refurbished gym equipment for your gym or home. We ship all commercial brands of used gym equipment worldwide from our factory in Los Angeles';
-    $data['keywords'] = 'Used fitness equipment, used exercise equipment, commercial fitness equipment, refurbished gym equipment, fitness equipment, used treadmill, life fitness treadmill, precor elliptical, elliptical trainer, used precor elliptical, global fitness, globalfitness, used gym equipment';
+
+    /****** Meta Data *********/
+
+    // $data['Author']  ='Global Fitness, Inc., support@globalfitness.us.com';
+    // $data['description'] = 'Browse the largest inventory of used fitness equipment and refurbished gym equipment for your gym or home. We ship all commercial brands of used gym equipment worldwide from our factory in Los Angeles';
+    // $data['keywords'] = 'Used fitness equipment, used exercise equipment, commercial fitness equipment, refurbished gym equipment, fitness equipment, used treadmill, life fitness treadmill, precor elliptical, elliptical trainer, used precor elliptical, global fitness, globalfitness, used gym equipment';
+    // $data['title'] = "Used Fitness Equipment and Used Gym Equipment – Global Fitness";
+
+     /****** Meta Data end *********/
     $data['ptype'] = "0";
-    $data['title'] = "Used Fitness Equipment and Used Gym Equipment – Global Fitness";
     $data['menu'] = $this->Site_model->menusearch();
     $this->load->view('template/site/header', $data);
     $this->load->view('home-test', $mydata);

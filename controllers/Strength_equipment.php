@@ -26,6 +26,7 @@ class strength_equipment extends CI_Controller {
     $this->load->view('template/site/404');
   }
 
+
 	public function product($id)
 	{
 	    $id  = str_replace("-", " ",$id); 

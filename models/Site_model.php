@@ -87,6 +87,7 @@ class Site_model extends CI_Model {
 		$query = $this->db->query("SELECT * FROM [dbo].[zFitnessParts]  ORDER BY PartName ASC OFFSET $limit ROWS FETCH NEXT 25 ROWS ONLY")->result();
 		return $query;
 	}
+	
 	public function productdetailbyname($id){
 		unset($_SESSION['letssEE']);
 		$query = $this->db->query("SELECT  * FROM [dbo].[zCircuitDetail] where ProductName='".$id."'")->result();
@@ -1531,7 +1532,7 @@ public function PromotionalData($table_name){
 
 /***** Function to get active promotional data *******/
 public function CarouselData($table_name){
-	$query = $this->db->query("SELECT  * FROM [dbo].[zHomePageCarouselData]  ORDER BY SlideOrder ASC")->result();
+	$query = $this->db->query("SELECT  * FROM [dbo].[zHomePageCarouselData]  where IsActive = 1 ORDER BY SlideOrder ASC")->result();
 	return $query;
 }
 }
